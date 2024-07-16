@@ -1,5 +1,4 @@
-# Generated with JReleaser 0.10.0 at 2022-01-11T02:40:32.47200303Z
-class Codeownerscli < Formula
+class CodeownersCli < Formula
     desc "codeowners-cli -- Command line tool for identifying the owners for files in a local repository or directory as well as identifying unowned codeowners."
     homepage "https://github.com/vincentjames501/codeowners-cli"
     version "0.0.1"
