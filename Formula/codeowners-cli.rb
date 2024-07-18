@@ -1,18 +1,18 @@
-# Generated with JReleaser 1.13.0 at 2024-07-16T16:14:50.206537723Z
+# Generated with JReleaser 1.13.0 at 2024-07-18T15:42:57.122070697Z
 
 class CodeownersCli < Formula
   desc "CodeOwners CLI utility"
   homepage "https://github.com/vincentjames501/codeowners-cli"
-  version "0.0.3"
+  version "0.0.4"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vincentjames501/codeowners-cli/releases/download/v0.0.3/codeowners-cli-0.0.3-linux-x86_64.zip"
-    sha256 "fb36bfe9de535eaba987a43c21ae5d3ae8eed24cca85ed18cda9e445bfb22b2f"
+    url "https://github.com/vincentjames501/codeowners-cli/releases/download/v0.0.4/codeowners-cli-0.0.4-linux-x86_64.zip"
+    sha256 "e526c46372d7e0b4d76bc118871fb3df07764f45bf04b7c29ce93bd390863273"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/vincentjames501/codeowners-cli/releases/download/v0.0.3/codeowners-cli-0.0.3-osx-aarch_64.zip"
-    sha256 "9542b392b0ba6a77c4b9edcc0329dc85d9976e49cad1408756448672651d6521"
+    url "https://github.com/vincentjames501/codeowners-cli/releases/download/v0.0.4/codeowners-cli-0.0.4-osx-aarch_64.zip"
+    sha256 "dfef6a8267dc7798ba3abef82e788cd864169d5941fae5086c208194076aa544"
   end
 
 
@@ -23,6 +23,6 @@ class CodeownersCli < Formula
 
   test do
     output = shell_output("#{bin}/codeowners-cli --version")
-    assert_match "0.0.3", output
+    assert_match "0.0.4", output
   end
 end
